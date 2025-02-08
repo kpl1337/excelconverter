@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Excel Konvertor";
+}
+
+<h2 class="text-primary">Excel Konvertor</h2>
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-info">@ViewBag.Message</div>
+}
+
+<form asp-action="UploadFile" method="post" enctype="multipart/form-data" class="mt-3 p-3 border rounded bg-light">
+    <div class="mb-3">
+        <label class="form-label fw-bold">Vyberte Excel soubor:</label>
+        <input type="file" name="File" class="form-control" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Převést do JSON</button>
+</form>
+
+@if (ViewBag.JsonFilePath != null)
+{
+    <hr />
+    <h3>Stažení JSON souboru</h3>
+    <a href="@Url.Action("DownloadFile", "Home", new { fileName = ViewBag.JsonFilePath })" class="btn btn-success">
+        <i class="bi bi-download"></i> Stáhnout JSON
+    </a>
+}
+
+
+
+
+

@@ -1,0 +1,323 @@
+[
+  {
+    "Název klienta": "ROSSMANN, spol. s r.o.",
+    "IČ klienta": "61246093",
+    "Zakázky": [
+      {
+        "Název zakázky": "RO0001",
+        "Vyrobené kusy": [
+          {
+            "Období": "01/2017",
+            "Počet kusů": 7
+          },
+          {
+            "Období": "02/2017",
+            "Počet kusů": 2
+          },
+          {
+            "Období": "03/2017",
+            "Počet kusů": 14
+          },
+          {
+            "Období": "04/2017",
+            "Počet kusů": 15
+          },
+          {
+            "Období": "05/2017",
+            "Počet kusů": 5
+          },
+          {
+            "Období": "06/2017",
+            "Počet kusů": 16
+          },
+          {
+            "Období": "07/2017",
+            "Počet kusů": 21
+          },
+          {
+            "Období": "08/2017",
+            "Počet kusů": 22
+          },
+          {
+            "Období": "09/2017",
+            "Počet kusů": 17
+          },
+          {
+            "Období": "10/2017",
+            "Počet kusů": 6
+          },
+          {
+            "Období": "11/2017",
+            "Počet kusů": 11
+          },
+          {
+            "Období": "12/2017",
+            "Počet kusů": 16
+          },
+          {
+            "Období": "01/2018",
+            "Počet kusů": 19
+          },
+          {
+            "Období": "02/2018",
+            "Počet kusů": 25
+          },
+          {
+            "Období": "03/2018",
+            "Počet kusů": 12
+          },
+          {
+            "Období": "04/2018",
+            "Počet kusů": 17
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Název klienta": "Alfmeier CZ s.r.o.",
+    "IČ klienta": "26167492",
+    "Zakázky": [
+      {
+        "Název zakázky": "AL0001",
+        "Vyrobené kusy": [
+          {
+            "Období": "01/2017",
+            "Počet kusů": 23
+          },
+          {
+            "Období": "02/2017",
+            "Počet kusů": 1
+          },
+          {
+            "Období": "03/2017",
+            "Počet kusů": 12
+          },
+          {
+            "Období": "04/2017",
+            "Počet kusů": 13
+          },
+          {
+            "Období": "05/2017",
+            "Počet kusů": 13
+          },
+          {
+            "Období": "06/2017",
+            "Počet kusů": 20
+          },
+          {
+            "Období": "07/2017",
+            "Počet kusů": 12
+          },
+          {
+            "Období": "08/2017",
+            "Počet kusů": 10
+          },
+          {
+            "Období": "09/2017",
+            "Počet kusů": 22
+          },
+          {
+            "Období": "10/2017",
+            "Počet kusů": 9
+          },
+          {
+            "Období": "11/2017",
+            "Počet kusů": 6
+          },
+          {
+            "Období": "12/2017",
+            "Počet kusů": 13
+          },
+          {
+            "Období": "01/2018",
+            "Počet kusů": 6
+          },
+          {
+            "Období": "02/2018",
+            "Počet kusů": 1
+          },
+          {
+            "Období": "03/2018",
+            "Počet kusů": 1
+          },
+          {
+            "Období": "04/2018",
+            "Počet kusů": 2
+          }
+        ]
+      },
+      {
+        "Název zakázky": "AL0002",
+        "Vyrobené kusy": [
+          {
+            "Období": "01/2018",
+            "Počet kusů": 0
+          },
+          {
+            "Období": "02/2018",
+            "Počet kusů": 16
+          },
+          {
+            "Období": "03/2018",
+            "Počet kusů": 12
+          },
+          {
+            "Období": "04/2018",
+            "Počet kusů": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Název klienta": "GUMOTEX, a.s.",
+    "IČ klienta": "16355407",
+    "Zakázky": [
+      {
+        "Název zakázky": "GU0001",
+        "Vyrobené kusy": [
+          {
+            "Období": "01/2017",
+            "Počet kusů": 10
+          },
+          {
+            "Období": "02/2017",
+            "Počet kusů": 12
+          },
+          {
+            "Období": "03/2017",
+            "Počet kusů": 19
+          },
+          {
+            "Období": "04/2017",
+            "Počet kusů": 10
+          },
+          {
+            "Období": "05/2017",
+            "Počet kusů": 23
+          },
+          {
+            "Období": "06/2017",
+            "Počet kusů": 22
+          },
+          {
+            "Období": "07/2017",
+            "Počet kusů": 13
+          },
+          {
+            "Období": "08/2017",
+            "Počet kusů": 6
+          },
+          {
+            "Období": "09/2017",
+            "Počet kusů": 1
+          },
+          {
+            "Období": "10/2017",
+            "Počet kusů": 25
+          },
+          {
+            "Období": "11/2017",
+            "Počet kusů": 2
+          },
+          {
+            "Období": "12/2017",
+            "Počet kusů": 13
+          },
+          {
+            "Období": "01/2018",
+            "Počet kusů": 0
+          },
+          {
+            "Období": "02/2018",
+            "Počet kusů": 24
+          },
+          {
+            "Období": "03/2018",
+            "Počet kusů": 22
+          },
+          {
+            "Období": "04/2018",
+            "Počet kusů": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Název klienta": "Setos spol. s r.o.",
+    "IČ klienta": "46352163",
+    "Zakázky": [
+      {
+        "Název zakázky": "SE0001",
+        "Vyrobené kusy": [
+          {
+            "Období": "01/2017",
+            "Počet kusů": 18
+          },
+          {
+            "Období": "02/2017",
+            "Počet kusů": 9
+          },
+          {
+            "Období": "03/2017",
+            "Počet kusů": 14
+          },
+          {
+            "Období": "04/2017",
+            "Počet kusů": 21
+          },
+          {
+            "Období": "05/2017",
+            "Počet kusů": 22
+          },
+          {
+            "Období": "06/2017",
+            "Počet kusů": 15
+          },
+          {
+            "Období": "07/2017",
+            "Počet kusů": 12
+          },
+          {
+            "Období": "08/2017",
+            "Počet kusů": 19
+          },
+          {
+            "Období": "09/2017",
+            "Počet kusů": 0
+          },
+          {
+            "Období": "10/2017",
+            "Počet kusů": 10
+          },
+          {
+            "Období": "11/2017",
+            "Počet kusů": 11
+          },
+          {
+            "Období": "12/2017",
+            "Počet kusů": 25
+          },
+          {
+            "Období": "01/2018",
+            "Počet kusů": 13
+          },
+          {
+            "Období": "02/2018",
+            "Počet kusů": 9
+          },
+          {
+            "Období": "03/2018",
+            "Počet kusů": 21
+          },
+          {
+            "Období": "04/2018",
+            "Počet kusů": 1
+          }
+        ]
+      }
+    ]
+  }
+]
