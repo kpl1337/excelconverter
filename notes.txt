@@ -1,0 +1,1 @@
+stravil jsem asi 1 hodinu pokousenim se prevest testovaci soubor, pak jsem prisel na to ze kdyz debuguji ve VS, tak to crashuje, ale kdyz spustim v ../WebExcelConverter "dotnet run", tak to funguje v pohode (coz je divne?)

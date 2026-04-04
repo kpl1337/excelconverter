@@ -25,3 +25,31 @@ C:\Users\petrs\OneDrive\Documents\SoftGate systems\SoftGate Systems solution\Con
 C:\Users\petrs\OneDrive\Documents\SoftGate systems\SoftGate Systems solution\ConsoleExcelConverter\obj\Debug\net8.0\ref\ConsoleExcelConverter.dll
 C:\Users\petrs\OneDrive\Documents\SoftGate systems\SoftGate Systems solution\ConsoleExcelConverter\bin\Debug\net8.0\ExcelConverterLibrary.dll
 C:\Users\petrs\OneDrive\Documents\SoftGate systems\SoftGate Systems solution\ConsoleExcelConverter\bin\Debug\net8.0\ExcelConverterLibrary.pdb
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\bin\Debug\net8.0\ConsoleExcelConverter.exe
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\bin\Debug\net8.0\ConsoleExcelConverter.deps.json
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\bin\Debug\net8.0\ConsoleExcelConverter.runtimeconfig.json
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\bin\Debug\net8.0\ConsoleExcelConverter.dll
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\bin\Debug\net8.0\ConsoleExcelConverter.pdb
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\bin\Debug\net8.0\ClosedXML.dll
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\bin\Debug\net8.0\ClosedXML.Parser.dll
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\bin\Debug\net8.0\ExcelNumberFormat.dll
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\bin\Debug\net8.0\RBush.dll
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\bin\Debug\net8.0\SixLabors.Fonts.dll
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\bin\Debug\net8.0\System.IO.Packaging.dll
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\bin\Debug\net8.0\ExcelConverterLibrary.dll
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\bin\Debug\net8.0\ExcelConverterLibrary.pdb
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\obj\Debug\net8.0\ConsoleExcelConverter.csproj.AssemblyReference.cache
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\obj\Debug\net8.0\ConsoleExcelConverter.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\obj\Debug\net8.0\ConsoleExcelConverter.AssemblyInfoInputs.cache
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\obj\Debug\net8.0\ConsoleExcelConverter.AssemblyInfo.cs
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\obj\Debug\net8.0\ConsoleExcelConverter.csproj.CoreCompileInputs.cache
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\obj\Debug\net8.0\ConsoleExcelConverter.sourcelink.json
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\obj\Debug\net8.0\ConsoleE.EA4F2184.Up2Date
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\obj\Debug\net8.0\ConsoleExcelConverter.dll
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\obj\Debug\net8.0\refint\ConsoleExcelConverter.dll
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\obj\Debug\net8.0\ConsoleExcelConverter.pdb
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\obj\Debug\net8.0\ConsoleExcelConverter.genruntimeconfig.cache
+D:\Sources\GitHub\excelconverter\ConsoleExcelConverter\obj\Debug\net8.0\ref\ConsoleExcelConverter.dll

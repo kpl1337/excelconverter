@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\petrs\\OneDrive\\Documents\\SoftGate systems\\SoftGate Systems solution\\TestExcelConverter\\TestExcelConverter.csproj": {}
+    "D:\\Sources\\GitHub\\excelconverter\\TestExcelConverter\\TestExcelConverter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\petrs\\OneDrive\\Documents\\SoftGate systems\\SoftGate Systems solution\\ExcelConverterLibrary\\ExcelConverterLibrary.csproj": {
+    "D:\\Sources\\GitHub\\excelconverter\\ExcelConverterLibrary\\ExcelConverterLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\petrs\\OneDrive\\Documents\\SoftGate systems\\SoftGate Systems solution\\ExcelConverterLibrary\\ExcelConverterLibrary.csproj",
+        "projectUniqueName": "D:\\Sources\\GitHub\\excelconverter\\ExcelConverterLibrary\\ExcelConverterLibrary.csproj",
         "projectName": "ExcelConverterLibrary",
-        "projectPath": "C:\\Users\\petrs\\OneDrive\\Documents\\SoftGate systems\\SoftGate Systems solution\\ExcelConverterLibrary\\ExcelConverterLibrary.csproj",
-        "packagesPath": "C:\\Users\\petrs\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\petrs\\OneDrive\\Documents\\SoftGate systems\\SoftGate Systems solution\\ExcelConverterLibrary\\obj\\",
+        "projectPath": "D:\\Sources\\GitHub\\excelconverter\\ExcelConverterLibrary\\ExcelConverterLibrary.csproj",
+        "packagesPath": "C:\\Users\\hacke\\.nuget\\packages\\",
+        "outputPath": "D:\\Sources\\GitHub\\excelconverter\\ExcelConverterLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\petrs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hacke\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,7 +42,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -76,24 +75,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\petrs\\OneDrive\\Documents\\SoftGate systems\\SoftGate Systems solution\\TestExcelConverter\\TestExcelConverter.csproj": {
+    "D:\\Sources\\GitHub\\excelconverter\\TestExcelConverter\\TestExcelConverter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\petrs\\OneDrive\\Documents\\SoftGate systems\\SoftGate Systems solution\\TestExcelConverter\\TestExcelConverter.csproj",
+        "projectUniqueName": "D:\\Sources\\GitHub\\excelconverter\\TestExcelConverter\\TestExcelConverter.csproj",
         "projectName": "TestExcelConverter",
-        "projectPath": "C:\\Users\\petrs\\OneDrive\\Documents\\SoftGate systems\\SoftGate Systems solution\\TestExcelConverter\\TestExcelConverter.csproj",
-        "packagesPath": "C:\\Users\\petrs\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\petrs\\OneDrive\\Documents\\SoftGate systems\\SoftGate Systems solution\\TestExcelConverter\\obj\\",
+        "projectPath": "D:\\Sources\\GitHub\\excelconverter\\TestExcelConverter\\TestExcelConverter.csproj",
+        "packagesPath": "C:\\Users\\hacke\\.nuget\\packages\\",
+        "outputPath": "D:\\Sources\\GitHub\\excelconverter\\TestExcelConverter\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\petrs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hacke\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -102,15 +101,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\petrs\\OneDrive\\Documents\\SoftGate systems\\SoftGate Systems solution\\WebExcelConverter\\WebExcelConverter.csproj": {
-                "projectPath": "C:\\Users\\petrs\\OneDrive\\Documents\\SoftGate systems\\SoftGate Systems solution\\WebExcelConverter\\WebExcelConverter.csproj"
+              "D:\\Sources\\GitHub\\excelconverter\\WebExcelConverter\\WebExcelConverter.csproj": {
+                "projectPath": "D:\\Sources\\GitHub\\excelconverter\\WebExcelConverter\\WebExcelConverter.csproj"
               }
             }
           }
@@ -123,7 +121,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -172,24 +170,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\petrs\\OneDrive\\Documents\\SoftGate systems\\SoftGate Systems solution\\WebExcelConverter\\WebExcelConverter.csproj": {
+    "D:\\Sources\\GitHub\\excelconverter\\WebExcelConverter\\WebExcelConverter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\petrs\\OneDrive\\Documents\\SoftGate systems\\SoftGate Systems solution\\WebExcelConverter\\WebExcelConverter.csproj",
+        "projectUniqueName": "D:\\Sources\\GitHub\\excelconverter\\WebExcelConverter\\WebExcelConverter.csproj",
         "projectName": "WebExcelConverter",
-        "projectPath": "C:\\Users\\petrs\\OneDrive\\Documents\\SoftGate systems\\SoftGate Systems solution\\WebExcelConverter\\WebExcelConverter.csproj",
-        "packagesPath": "C:\\Users\\petrs\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\petrs\\OneDrive\\Documents\\SoftGate systems\\SoftGate Systems solution\\WebExcelConverter\\obj\\",
+        "projectPath": "D:\\Sources\\GitHub\\excelconverter\\WebExcelConverter\\WebExcelConverter.csproj",
+        "packagesPath": "C:\\Users\\hacke\\.nuget\\packages\\",
+        "outputPath": "D:\\Sources\\GitHub\\excelconverter\\WebExcelConverter\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\petrs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hacke\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -198,15 +196,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\petrs\\OneDrive\\Documents\\SoftGate systems\\SoftGate Systems solution\\ExcelConverterLibrary\\ExcelConverterLibrary.csproj": {
-                "projectPath": "C:\\Users\\petrs\\OneDrive\\Documents\\SoftGate systems\\SoftGate Systems solution\\ExcelConverterLibrary\\ExcelConverterLibrary.csproj"
+              "D:\\Sources\\GitHub\\excelconverter\\ExcelConverterLibrary\\ExcelConverterLibrary.csproj": {
+                "projectPath": "D:\\Sources\\GitHub\\excelconverter\\ExcelConverterLibrary\\ExcelConverterLibrary.csproj"
               }
             }
           }
@@ -219,7 +216,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -245,7 +242,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

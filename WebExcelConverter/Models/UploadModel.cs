@@ -3,5 +3,6 @@
     public class UploadModel
     {
         public IFormFile File { get; set; }
+        public string Format { get; set; }
     }
 }

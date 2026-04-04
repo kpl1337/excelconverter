@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using ExcelToJsonWeb.Helpers;
 using WebExcelConverter.Models;
 using WebExcelConverter.Services;
@@ -28,6 +28,8 @@ namespace WebExcelConverter.Controllers
                 return View("Index");
             }
 
+
+
             if (Path.GetExtension(model.File.FileName).ToLower() != Constants.ExcelFileExtension)
             {
                 ViewBag.Message = Constants.InvalidFileType;
@@ -37,12 +39,13 @@ namespace WebExcelConverter.Controllers
             try
             {
                 string outputFilePath = _excelService.ConvertExcelToJson(model.File.OpenReadStream(), model.File.FileName);
-
+                
                 ViewBag.JsonFilePath = Path.GetFileName(outputFilePath);
                 ViewBag.Message = Constants.ConversionSuccess;
-
+                
                 return View("Index");
             }
+
             catch (System.Exception ex)
             {
                 ViewBag.Message = $"{Constants.ErrorPrefix} {ex.Message}";
@@ -50,16 +53,30 @@ namespace WebExcelConverter.Controllers
             }
         }
 
-        public IActionResult DownloadFile(string fileName)
+        public IActionResult DownloadFileJson(string fileName)
         {
             string filePath = Path.Combine(Path.GetTempPath(), fileName);
+
             if (System.IO.File.Exists(filePath))
             {
                 byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
                 return File(fileBytes, "application/json", fileName);
             }
+
+            return NotFound();
+        }
+
+        public IActionResult DownloadFileXML(string fileName)
+        {
+            string filePath = Path.Combine(Path.GetTempPath(), fileName);
+
+            if (System.IO.File.Exists(filePath))
+            {
+                byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
+                return File(fileBytes, "application/json", fileName);
+            }
+
             return NotFound();
         }
     }
 }
-

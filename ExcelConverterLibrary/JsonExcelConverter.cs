@@ -16,7 +16,6 @@ namespace ExcelConverterLibrary
             return Newtonsoft.Json.JsonConvert.SerializeObject(clients, Newtonsoft.Json.Formatting.Indented);
         }
 
-
         private static List<Client> ConvertExcelToClients(string filePath)
         {
             Dictionary<string, Client> clients = new Dictionary<string, Client>();

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebExcelConverter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6b3e84f6582c2a1747e0a557bf235f7d71a3120")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebExcelConverter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebExcelConverter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
