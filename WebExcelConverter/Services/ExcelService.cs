@@ -8,12 +8,11 @@ namespace WebExcelConverter.Services
 {
     public class ExcelService
     {
-        private readonly IExcelConverter _converter;
-
-        public ExcelService()
-        {
-            _converter = new JsonExcelConverter();
-        }
+        // nahrazeno v jednotlivych funkcich
+        //public ExcelService()
+        //{
+        //    _converter = new JsonExcelConverter();
+        //}
 
         /// <summary>
         /// Converts Excel to Json using the library
@@ -27,9 +26,40 @@ namespace WebExcelConverter.Services
 
             try
             {
-                string jsonResult = _converter.Convert(tempFilePath);
+                IExcelConverter jsonConverter = new JsonExcelConverter();
+                string jsonResult = jsonConverter.Convert(tempFilePath);
                 string outputPath = FileHelper.GetJsonOutputPath(originalFileName);
+                
                 File.WriteAllText(outputPath, jsonResult);
+                return outputPath;
+            }
+            finally
+            {
+                try
+                {
+                    if (File.Exists(tempFilePath))
+                    {
+                        File.Delete(tempFilePath);
+                    }
+                }
+                catch (IOException ex)
+                {
+                    Console.WriteLine($"Warning: Could not delete temp file {tempFilePath}. Error: {ex.Message}");
+                }
+            }
+        }
+
+        public string ConvertExcelToXml(Stream fileStream, string originalFileName)
+        {
+            string tempFilePath = FileHelper.SaveUploadedFile(fileStream);
+
+            try
+            {
+                IExcelConverter xmlConverter = new XmlExcelConverter();
+                string xmlResult = xmlConverter.Convert(tempFilePath);
+                string outputPath = FileHelper.GetXmlOutputPath(originalFileName);
+                
+                File.WriteAllText(outputPath, xmlResult);
                 return outputPath;
             }
             finally

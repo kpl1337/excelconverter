@@ -15,11 +15,13 @@ class Program
 
         Console.WriteLine($"Found {excelFiles.Length} Excel file(s). Converting...");
 
-        IExcelConverter converter = new JsonExcelConverter();
+        IExcelConverter jsonConverter = new JsonExcelConverter();
+        IExcelConverter xmlConverter = new XmlExcelConverter();
 
         foreach (string filePath in excelFiles)
         {
-            ProcessFile(filePath, converter);
+            ProcessFile(filePath, jsonConverter);
+            ProcessFile(filePath, xmlConverter);
         }
 
         Console.WriteLine("All conversions completed.");
@@ -28,14 +30,18 @@ class Program
     static void ProcessFile(string filePath, IExcelConverter converter)
     {
         string fileName = Path.GetFileName(filePath);
-        string outputFileName = Path.GetFileNameWithoutExtension(filePath) + ".json";
+        string outputFileNameJson = Path.GetFileNameWithoutExtension(filePath) + ".json";
+        string outputFileNameXml = Path.GetFileNameWithoutExtension(filePath) + ".xml";
 
         try
         {
             Console.WriteLine($"Processing: {fileName}");
-            string result = converter.Convert(filePath);
-            File.WriteAllText(outputFileName, result);
-            Console.WriteLine($"Successfully converted '{fileName}' to '{outputFileName}'");
+            string jsonResult = converter.Convert(filePath);
+            string xmlResult = converter.Convert(filePath);
+            File.WriteAllText(outputFileNameJson, jsonResult);
+            File.WriteAllText(outputFileNameXml, xmlResult);
+            Console.WriteLine($"Successfully converted '{fileName}' to '{outputFileNameJson}'");
+            Console.WriteLine($"Successfully converted '{fileName}' to '{outputFileNameXml}'");
         }
         catch (Exception ex)
         {

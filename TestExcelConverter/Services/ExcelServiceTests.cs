@@ -63,6 +63,37 @@ namespace TestExcelConverter.Services
                 Console.WriteLine($"Warning: Soubor nelze smazat - {ex.Message}");
             }
         }
+
+        [Fact]
+        public void ConvertExcelToXml_ShouldReturnXmlFilePath()
+        {
+            // Arrange
+            string tempExcelFile = CreateValidTestExcelFile();
+            string originalFileName = "TestFile.xlsx";
+            string resultFilePath;
+
+            using (var stream = new FileStream(tempExcelFile, FileMode.Open, FileAccess.Read, FileShare.Read))
+            {
+                // Act
+                resultFilePath = _excelService.ConvertExcelToXml(stream, originalFileName);
+            }
+
+            // Assert
+            resultFilePath.Should().NotBeNullOrWhiteSpace();
+            resultFilePath.Should().EndWith(".xml");
+            File.Exists(resultFilePath).Should().BeTrue();
+
+            // Cleanup
+            try
+            {
+                if (File.Exists(resultFilePath)) File.Delete(resultFilePath);
+                if (File.Exists(tempExcelFile)) File.Delete(tempExcelFile);
+            }
+            catch (IOException ex)
+            {
+                Console.WriteLine($"Warning: Soubor nelze smazat - {ex.Message}");
+            }
+        }
     }
 }
 

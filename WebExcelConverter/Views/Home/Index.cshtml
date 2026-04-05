@@ -18,7 +18,7 @@
 
     <div class="mb-3">
         <label class="form-label fw-bold">Výstupní formát:</label>
-        <select name="Format" class="form-select">
+        <select name="Format" itemid="format" class="form-select" required>
             <option value="json">JSON</option>
             <option value="xml">XML</option>
         </select>
@@ -29,11 +29,20 @@
 
 @if (ViewBag.JsonFilePath != null)
 {
-    <hr />
-    <h3>Stažení JSON souboru</h3>
-    <a href="@Url.Action("DownloadFileJson", "Home", new { fileName = ViewBag.JsonFilePath })" class="btn btn-success">
-        <i class="bi bi-download"></i> Stáhnout JSON
-    </a>
+        <hr />
+        <h3>Stažení JSON souboru</h3>
+        <a href="@Url.Action("DownloadFile", "Home", new { fileName = ViewBag.JsonFilePath, format = "json" })" class="btn btn-success">
+            <i class="bi bi-download"></i> Stáhnout JSON
+        </a>
+}
+
+@if (ViewBag.XmlFilePath != null)
+{
+        <hr />
+        <h3>Stažení XML souboru</h3>
+        <a href="@Url.Action("DownloadFile", "Home", new { fileName = ViewBag.XmlFilePath, format = "xml" })" class="btn btn-primary">
+            <i class="bi bi-download"></i> Stáhnout XML
+        </a>
 }
 
 

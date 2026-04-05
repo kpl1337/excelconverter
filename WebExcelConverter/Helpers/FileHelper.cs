@@ -33,6 +33,11 @@ namespace WebExcelConverter.Helpers
             string jsonFileName = Path.GetFileNameWithoutExtension(originalFileName) + Constants.JsonFileExtension;
             return Path.Combine(Path.GetTempPath(), jsonFileName);
         }
+        public static string GetXmlOutputPath(string originalFileName)
+        {
+            string xmlFileName = Path.GetFileNameWithoutExtension(originalFileName) + Constants.XmlFileExtension;
+            return Path.Combine(Path.GetTempPath(), xmlFileName);
+        }
     }
 }
 
