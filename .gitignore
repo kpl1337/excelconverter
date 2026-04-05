@@ -50,5 +50,5 @@ Thumbs.db
 
 # Visual studio junk stuff
 .vs/
-bin/
-obj/
+[Bb]in/
+[Oo]bj/
