@@ -3,6 +3,7 @@ using ExcelToJsonWeb.Helpers;
 using WebExcelConverter.Models;
 using WebExcelConverter.Services;
 using DocumentFormat.OpenXml.EMMA;
+using DocumentFormat.OpenXml.Wordprocessing;
 
 namespace WebExcelConverter.Controllers
 {
@@ -37,23 +38,32 @@ namespace WebExcelConverter.Controllers
 
             try
             {
-                if (model.Format == "json")
+                string outputFilePath;
+
+                switch (model.Format)
                 {
-                    string outputFilePath = _excelService.ConvertExcelToJson(model.File.OpenReadStream(), model.File.FileName);
+                    case "xml":
+                    {
+                        outputFilePath = _excelService.ConvertExcelToXml(model.File.OpenReadStream(), model.File.FileName);
+                        
+                        ViewBag.XmlFilePath = Path.GetFileName(outputFilePath);
+                        ViewBag.Message = Constants.ConversionSuccess;
 
-                    ViewBag.JsonFilePath = Path.GetFileName(outputFilePath);
-                    ViewBag.Message = Constants.ConversionSuccess;
+                        return View("Index");
+                    }
+                    case "json":
+                    {
+                        
+                        outputFilePath = _excelService.ConvertExcelToJson(model.File.OpenReadStream(), model.File.FileName);
+                        ViewBag.JsonFilePath = Path.GetFileName(outputFilePath);
+                        ViewBag.Message = Constants.ConversionSuccess;
 
-                    return View("Index");
-                } 
-                else //if (model.Format == "xml") // all if-statement paths have to return a value, so, this wouldn't work 
-                {
-                    string outputFilePath = _excelService.ConvertExcelToXml(model.File.OpenReadStream(), model.File.FileName);
-
-                    ViewBag.XmlFilePath = Path.GetFileName(outputFilePath);
-                    ViewBag.Message = Constants.ConversionSuccess;
-
-                    return View("Index");
+                        return View("Index");
+                    }
+                    default:
+                    {
+                        throw new Exception("Unsupported output format.");
+                    }
                 }
             }
             
@@ -78,9 +88,6 @@ namespace WebExcelConverter.Controllers
             if (System.IO.File.Exists(filePath))
             {
                 byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
-                
-                // already defined in the function argument, just so we don't have to
-                // make a whole another function, or logic
                 return File(fileBytes, "application/" + format, fileName);
             }
 

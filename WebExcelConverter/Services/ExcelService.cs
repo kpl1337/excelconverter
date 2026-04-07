@@ -8,7 +8,7 @@ namespace WebExcelConverter.Services
 {
     public class ExcelService
     {
-        // nahrazeno v jednotlivych funkcich
+        // replaced in each method
         //public ExcelService()
         //{
         //    _converter = new JsonExcelConverter();
@@ -49,6 +49,12 @@ namespace WebExcelConverter.Services
             }
         }
 
+        /// <summary>
+        /// Converts Excel to Xml using the library
+        /// </summary>
+        /// <param name="fileStream">Stream with excel file</param>
+        /// <param name="originalFileName">Original file name</param>
+        /// <returns></returns>
         public string ConvertExcelToXml(Stream fileStream, string originalFileName)
         {
             string tempFilePath = FileHelper.SaveUploadedFile(fileStream);
