@@ -13,21 +13,23 @@ namespace ExcelConverterLibrary
     public class XmlExcelConverter : IExcelConverter
     {
         /// <summary>
-        /// Method loads excel file and return converted json.
+        /// Method loads excel file and return converted xml.
         /// </summary>
         /// <param name="filePath">filePath to excel</param>
-        /// <returns>Serialized json to string</returns>
+        /// <returns>Serialized xml to string</returns>
         public string Convert(string filePath)
         {
-            // ziskame data jako u JSONu
             List<Client> clients = ConvertExcelToClients(filePath);
 
             XmlSerializer ser = new XmlSerializer(typeof(List<Client>));
 
+            // add StringWriter, so the output isn't written into a file, but into a string
             using (StringWriter writer = new StringWriter())
             {
+                // serializes clients, and saves the data into writer
                 ser.Serialize(writer, clients);
 
+                // return the value saved in writer
                 return writer.ToString();
             }
         }

@@ -24,9 +24,9 @@ namespace WebExcelConverter.Helpers
         }
 
         /// <summary>
-        /// Compose the outputh json path
+        /// Compose the output paths for xml and json file extensions
         /// </summary>
-        /// <param name="originalFileName">Roginal file name</param>
+        /// <param name="originalFileName">Original file name</param>
         /// <returns></returns>
         public static string GetJsonOutputPath(string originalFileName)
         {

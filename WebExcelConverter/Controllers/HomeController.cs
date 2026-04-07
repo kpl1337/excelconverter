@@ -46,7 +46,7 @@ namespace WebExcelConverter.Controllers
 
                     return View("Index");
                 } 
-                else //if (model.Format == "xml") // vsechny cesty musi vracet hodnotu, takze tohle by nefungovalo
+                else //if (model.Format == "xml") // all if-statement paths have to return a value, so, this wouldn't work 
                 {
                     string outputFilePath = _excelService.ConvertExcelToXml(model.File.OpenReadStream(), model.File.FileName);
 
@@ -64,6 +64,13 @@ namespace WebExcelConverter.Controllers
             }
         }
 
+        /// <summary>
+        /// Method downloads converted file
+        /// </summary>
+        /// <param name="fileName">Output file name</param>
+        /// <param name="format">Format of the output file</param>
+        /// <returns>returns file</returns>
+
         public IActionResult DownloadFile(string fileName, string format)
         {
             string filePath = Path.Combine(Path.GetTempPath(), fileName);
@@ -71,6 +78,9 @@ namespace WebExcelConverter.Controllers
             if (System.IO.File.Exists(filePath))
             {
                 byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
+                
+                // already defined in the function argument, just so we don't have to
+                // make a whole another function, or logic
                 return File(fileBytes, "application/" + format, fileName);
             }
 
