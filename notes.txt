@@ -1,2 +1,2 @@
-Time spent: 	approximately 1 hour on troubleshooting crashes, when debugging directly in Visual Studio, worked around it by running the app directly via the command line (dotnet run)
+Time spent: 	approximately 1 hour on troubleshooting crashes, when debugging directly in Visual Studio. worked around it by running the app directly via the command line (dotnet run)
 	 	around 2 hours implementing the XML conversion logic
